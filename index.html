@@ -1,197 +1,796 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="zDfNdTy1X4CeWBj3aetZhRZ-RTTUhZIQP66bIovJao4" />
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mursalin Hassan | Learning & Digital Resources</title>
-  <meta name="description" content="Educational resources, O-Level study materials, eBooks, articles, and services from Mursalin Hassan.">
-  <style>
-    :root { --navy:#10233f; --blue:#2458a6; --sky:#eaf2ff; --ink:#1c2635; --muted:#5d6b7d; --paper:#f7f9fc; --white:#fff; --line:#e4eaf2; --gold:#f2b544; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--paper); line-height:1.6; }
-    a { color:inherit; text-decoration:none; }
-    .wrap { width:min(1100px,92%); margin:auto; }
-    header { background:var(--navy); color:white; position:sticky; top:0; z-index:10; box-shadow:0 4px 16px #10233f20; }
-    .topbar { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
-    .brand { font-weight:800; letter-spacing:.2px; font-size:1.08rem; }
-    nav { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
-    nav a { font-size:.9rem; color:#e9f1ff; opacity:.95; }
-    nav a:hover { color:var(--gold); }
-    .hero { background:linear-gradient(135deg,#10233f,#2458a6); color:white; padding:64px 0 58px; }
-    .hero-grid { display:grid; grid-template-columns:1.5fr .8fr; gap:30px; align-items:center; }
-    .eyebrow { text-transform:uppercase; letter-spacing:1.8px; font-size:.78rem; font-weight:700; color:#c8dcff; }
-    h1 { font-size:clamp(2rem,5vw,3.4rem); line-height:1.1; margin:12px 0 18px; }
-    .hero p { color:#e5efff; max-width:650px; font-size:1.06rem; }
-    .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
-    .btn { display:inline-block; padding:11px 17px; border-radius:10px; font-weight:700; background:var(--gold); color:#18263a; }
-    .btn.alt { border:1px solid #bcd5ff; background:transparent; color:white; }
-    .hero-card { background:#ffffff14; border:1px solid #ffffff30; border-radius:18px; padding:24px; backdrop-filter:blur(3px); }
-    .hero-card .big { font-size:2rem; font-weight:800; }
-    section { padding:48px 0; }
-    section.white { background:white; }
-    .section-head { margin-bottom:24px; }
-    .section-head h2 { margin:0 0 6px; font-size:1.8rem; color:var(--navy); }
-    .section-head p { color:var(--muted); margin:0; max-width:720px; }
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-    .grid.four { grid-template-columns:repeat(4,1fr); }
-    .card { background:white; border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow:0 5px 18px #10233f08; }
-    .white .card { background:var(--paper); }
-    .card h3 { margin:8px 0 6px; color:var(--navy); }
-    .card p { margin:0 0 12px; color:var(--muted); font-size:.95rem; }
-    .icon { font-size:1.65rem; }
-    .pill { display:inline-block; background:var(--sky); color:var(--blue); font-size:.76rem; font-weight:700; border-radius:999px; padding:4px 9px; margin:0 0 6px; }
-    .price { font-weight:800; color:var(--navy); font-size:1.1rem; margin:10px 0; }
-    .smallbtn { display:inline-block; border:1px solid var(--blue); border-radius:8px; padding:8px 12px; color:var(--blue); font-weight:700; font-size:.88rem; }
-    .smallbtn:hover { background:var(--blue); color:white; }
-    .notice { background:#fff8e6; border:1px solid #f3dfa9; border-radius:12px; padding:14px 16px; color:#6c5114; font-size:.9rem; }
-    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-    .contact-box { background:var(--navy); color:white; border-radius:16px; padding:26px; }
-    .contact-box p { color:#d8e7ff; }
-    footer { background:#0b1930; color:#cbd8ea; padding:24px 0; font-size:.88rem; }
-    footer .foot { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
-    .muted { color:var(--muted); }
-    @media(max-width:850px) {
-      .hero-grid,.about-grid { grid-template-columns:1fr; }
-      .grid,.grid.four { grid-template-columns:repeat(2,1fr); }
-      .topbar { padding:12px 0; align-items:flex-start; flex-direction:column; }
-      nav { gap:12px; }
-    }
-    @media(max-width:560px) {
-      .grid,.grid.four { grid-template-columns:1fr; }
-      .hero { padding:45px 0; }
-      nav a { font-size:.82rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="zDfNdTy1X4CeWBj3aetZhRZ-RTTUhZIQP66bIovJao4">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mursalin Hassan | Learning & Digital Resources</title>
+
+<meta name="description" content="Educational resources, academic materials, eBooks, articles and professional services from Mursalin Hassan.">
+
+<style>
+:root {
+--green:#006a3d;
+--darkgreen:#004d2c;
+--red:#f42a41;
+--lightgreen:#eaf5ee;
+--white:#ffffff;
+--ink:#203328;
+--muted:#65776b;
+--line:#d9e8dd;
+}
+
+* {box-sizing:border-box;}
+
+html {scroll-behavior:smooth;}
+
+body {
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--ink);
+background:var(--lightgreen);
+line-height:1.6;
+}
+
+a {text-decoration:none;color:inherit;}
+
+.wrap {
+width:min(1100px,92%);
+margin:auto;
+}
+
+/* HEADER */
+
+header {
+background:var(--red);
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 4px 15px #0002;
+}
+
+.topbar {
+min-height:72px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+}
+
+.brand {
+font-weight:800;
+font-size:1.15rem;
+white-space:nowrap;
+}
+
+nav {
+display:flex;
+align-items:center;
+gap:5px;
+flex-wrap:wrap;
+}
+
+nav details {
+position:relative;
+}
+
+nav summary {
+list-style:none;
+cursor:pointer;
+padding:10px 12px;
+font-size:.88rem;
+font-weight:700;
+border-radius:7px;
+}
+
+nav summary::-webkit-details-marker {
+display:none;
+}
+
+nav summary::after {
+content:" ▾";
+}
+
+nav summary:hover,
+nav details[open] summary {
+background:#ffffff28;
+}
+
+.dropdown {
+position:absolute;
+top:100%;
+left:0;
+min-width:190px;
+background:white;
+color:var(--darkgreen);
+border-radius:9px;
+box-shadow:0 8px 20px #0003;
+padding:7px;
+}
+
+.dropdown a {
+display:block;
+padding:10px 12px;
+font-size:.9rem;
+border-radius:6px;
+}
+
+.dropdown a:hover {
+background:var(--lightgreen);
+color:var(--red);
+}
+
+/* HERO */
+
+.hero {
+background:linear-gradient(135deg,var(--darkgreen),var(--green));
+color:white;
+padding:70px 0;
+position:relative;
+overflow:hidden;
+}
+
+.hero-grid {
+display:grid;
+grid-template-columns:1.5fr .8fr;
+gap:30px;
+align-items:center;
+}
+
+.eyebrow {
+color:#d6f4df;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:.8rem;
+font-weight:bold;
+}
+
+h1 {
+font-size:clamp(2.2rem,5vw,3.5rem);
+line-height:1.15;
+margin:15px 0;
+}
+
+.hero p {
+color:#e1f4e7;
+max-width:650px;
+font-size:1.05rem;
+}
+
+.btns {
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.btn {
+display:inline-block;
+padding:12px 19px;
+border-radius:8px;
+font-weight:bold;
+background:var(--red);
+color:white;
+}
+
+.btn.alt {
+background:transparent;
+border:2px solid white;
+}
+
+.hero-card {
+background:#ffffff18;
+border:1px solid #ffffff40;
+border-radius:18px;
+padding:25px;
+}
+
+.hero-card .big {
+font-size:2rem;
+font-weight:800;
+}
+
+/* SECTIONS */
+
+section {
+padding:50px 0;
+scroll-margin-top:90px;
+}
+
+section.white {
+background:white;
+}
+
+.section-head {
+margin-bottom:25px;
+}
+
+.section-head h2 {
+color:var(--green);
+font-size:1.9rem;
+margin:0 0 7px;
+}
+
+.section-head p {
+color:var(--muted);
+margin:0;
+max-width:750px;
+}
+
+/* CARDS */
+
+.grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.grid.four {
+grid-template-columns:repeat(4,1fr);
+}
+
+.about-grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.card {
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+padding:21px;
+box-shadow:0 5px 16px #004d2c0b;
+}
+
+.white .card {
+background:var(--lightgreen);
+}
+
+.card h3 {
+color:var(--green);
+margin:8px 0;
+}
+
+.card p {
+color:var(--muted);
+font-size:.95rem;
+}
+
+.icon {
+font-size:1.7rem;
+}
+
+.pill {
+display:inline-block;
+background:#dcefe2;
+color:var(--green);
+font-size:.76rem;
+font-weight:bold;
+padding:5px 10px;
+border-radius:20px;
+}
+
+.smallbtn {
+display:inline-block;
+border:1px solid var(--green);
+color:var(--green);
+padding:8px 13px;
+border-radius:7px;
+font-weight:bold;
+font-size:.88rem;
+}
+
+.smallbtn:hover {
+background:var(--green);
+color:white;
+}
+
+.price {
+font-weight:bold;
+color:var(--green);
+margin:12px 0;
+}
+
+.notice {
+background:#fff8e6;
+border:1px solid #f3dfa9;
+border-radius:10px;
+padding:15px;
+color:#6c5114;
+}
+
+/* CONTACT */
+
+.contact-box {
+background:var(--green);
+color:white;
+padding:30px;
+border-radius:16px;
+}
+
+.contact-box p {
+color:#e1f4e7;
+}
+
+/* FOOTER */
+
+footer {
+background:var(--darkgreen);
+color:white;
+padding:25px 0;
+font-size:.9rem;
+}
+
+.foot {
+display:flex;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap;
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+
+.hero-grid,
+.about-grid {
+grid-template-columns:1fr;
+}
+
+.grid,
+.grid.four {
+grid-template-columns:repeat(2,1fr);
+}
+
+.topbar {
+padding:13px 0;
+align-items:flex-start;
+flex-direction:column;
+}
+
+nav {
+gap:3px;
+}
+
+}
+
+@media(max-width:560px) {
+
+.grid,
+.grid.four {
+grid-template-columns:1fr;
+}
+
+.hero {
+padding:45px 0;
+}
+
+nav {
+width:100%;
+}
+
+nav summary {
+padding:9px 8px;
+font-size:.79rem;
+}
+
+.dropdown {
+min-width:175px;
+}
+
+}
+</style>
 </head>
+
 <body>
+
 <header>
-  <div class="wrap topbar">
-    <a class="brand" href="#home">Mursalin Hassan</a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#olevel">O-Level</a><a href="#ebooks">eBooks</a>
-      <a href="#blog">Blog</a><a href="#affiliate">Affiliate</a><a href="#services">Services</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
+<div class="wrap topbar">
+
+<a class="brand" href="#home">Mursalin Hassan</a>
+
+<nav aria-label="Main navigation">
+
+<details>
+<summary>ABOUT</summary>
+<div class="dropdown">
+<a href="#about">Biography</a>
+<a href="#profile">Professional Profile</a>
+<a href="#profile">CV</a>
+</div>
+</details>
+
+<details>
+<summary>ACADEMIC</summary>
+<div class="dropdown">
+<a href="#mathematics">Mathematics</a>
+<a href="#physics">Physics</a>
+<a href="#chemistry">Chemistry</a>
+<a href="#biology">Biology</a>
+</div>
+</details>
+
+<details>
+<summary>EBOOKS</summary>
+<div class="dropdown">
+<a href="#ebooks">Digital Books</a>
+<a href="#ebooks">Study Guides</a>
+<a href="#ebooks">Free Samples</a>
+</div>
+</details>
+
+<details>
+<summary>BLOG</summary>
+<div class="dropdown">
+<a href="#blog">Education</a>
+<a href="#blog">Technology</a>
+<a href="#blog">Learning</a>
+</div>
+</details>
+
+<details>
+<summary>AFFILIATE</summary>
+<div class="dropdown">
+<a href="#affiliate">Study Equipment</a>
+<a href="#affiliate">Technology</a>
+<a href="#affiliate">Books</a>
+</div>
+</details>
+
+<details>
+<summary>SERVICES</summary>
+<div class="dropdown">
+<a href="#services">Translation</a>
+<a href="#services">Educational Content</a>
+<a href="#services">Writing & Research</a>
+</div>
+</details>
+
+<details>
+<summary>CONTACT</summary>
+<div class="dropdown">
+<a href="#contact">Email</a>
+<a href="#contact">Phone</a>
+<a href="#contact">Contact Information</a>
+</div>
+</details>
+
+</nav>
+</div>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Learning • Resources • Digital Skills</div>
-        <h1>Learn with clarity.<br>Grow with confidence.</h1>
-        <p>Educational resources, study materials, articles, and useful digital recommendations—all gathered in one place.</p>
-        <div class="btns">
-          <a class="btn" href="#olevel">Explore O-Level Resources</a>
-          <a class="btn alt" href="#blog">Read the Blog</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="big">One platform</div>
-        <p>Study resources, free articles, digital books, recommendations, and services—with new content added over time.</p>
-        <p><strong>Site sections are being prepared.</strong></p>
-      </div>
-    </div>
-  </section>
 
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head"><h2>About</h2><p>A brief introduction to the educator and professional behind this platform.</p></div>
-      <div class="about-grid">
-        <div class="card">
-          <h3>Mursalin Hassan</h3>
-          <p>Education, administration, HR, finance, writing, and learning resources are among my professional interests. This site is being developed to share helpful educational content and practical digital resources.</p>
-          <a class="smallbtn" href="#contact">Get in touch</a>
-        </div>
-        <div class="card">
-          <h3>Professional Profile</h3>
-          <p>Explore my professional background, experience, and services. A CV download link can be added here once the latest PDF is placed in the website repository.</p>
-          <span class="pill">CV link to be added</span>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- HOME -->
 
-  <section class="white" id="olevel">
-    <div class="wrap">
-      <div class="section-head"><h2>O-Level Study Resources</h2><p>Subject-based learning materials, revision notes, practice questions, and model tests. Free samples and paid resources will be clearly marked.</p></div>
-      <div class="grid four">
-        <article class="card"><div class="icon">➗</div><h3>Mathematics</h3><p>Notes, worked examples, practice sets, and model tests.</p><span class="pill">Content coming soon</span></article>
-        <article class="card"><div class="icon">⚛️</div><h3>Physics</h3><p>Topic explanations, revision resources, and practice materials.</p><span class="pill">Content coming soon</span></article>
-        <article class="card"><div class="icon">🧪</div><h3>Chemistry</h3><p>Chapter notes, concepts, questions, and exam preparation.</p><span class="pill">Content coming soon</span></article>
-        <article class="card"><div class="icon">🧬</div><h3>Biology</h3><p>Study notes, key concepts, diagrams, and revision resources.</p><span class="pill">Content coming soon</span></article>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="home">
+<div class="wrap hero-grid">
 
-  <section id="ebooks">
-    <div class="wrap">
-      <div class="section-head"><h2>eBooks & Digital Products</h2><p>Digital study guides and educational publications. Product prices will be set individually and may change.</p></div>
-      <div class="grid">
-        <article class="card"><span class="pill">Sample product</span><h3>O-Level Chemistry Revision Guide</h3><p>Topic-wise notes, explanations, and practice materials.</p><div class="price">Price: To be announced</div><a class="smallbtn" href="#contact">Request information</a></article>
-        <article class="card"><span class="pill">Sample product</span><h3>Mathematics Practice Pack</h3><p>Practice questions organized for revision and skill-building.</p><div class="price">Price: To be announced</div><a class="smallbtn" href="#contact">Request information</a></article>
-        <article class="card"><span class="pill">Free sample planned</span><h3>Preview Resources</h3><p>Visitors can preview selected pages before deciding to purchase.</p><div class="price">Free preview</div><a class="smallbtn" href="#contact">Ask about samples</a></article>
-      </div>
-      <div class="notice" style="margin-top:18px">Online payment and secure PDF access are planned. Purchase buttons will be activated after payment verification and delivery are set up.</div>
-    </div>
-  </section>
+<div>
+<div class="eyebrow">Learning • Resources • Digital Skills</div>
 
-  <section class="white" id="blog">
-    <div class="wrap">
-      <div class="section-head"><h2>Blog & Free Articles</h2><p>Helpful articles for students, teachers, learners, and people exploring digital tools.</p></div>
-      <div class="grid">
-        <article class="card"><span class="pill">Planned article</span><h3>How to Prepare for O-Level Chemistry</h3><p>A practical revision routine and ways to organize your study.</p></article>
-        <article class="card"><span class="pill">Planned article</span><h3>Useful AI Tools for Students</h3><p>A beginner-friendly overview of digital tools for learning.</p></article>
-        <article class="card"><span class="pill">Planned article</span><h3>Study Smarter with Practice</h3><p>How to use practice questions and review mistakes effectively.</p></article>
-      </div>
-    </div>
-  </section>
+<h1>Learn with clarity.<br>Grow with confidence.</h1>
 
-  <section id="affiliate">
-    <div class="wrap">
-      <div class="section-head"><h2>Affiliate Recommendations</h2><p>Useful books, study tools, technology, and learning resources may be featured here.</p></div>
-      <div class="grid">
-        <article class="card"><div class="icon">🧮</div><h3>Study Equipment</h3><p>Calculators, stationery, and practical tools for students.</p><span class="pill">Recommendations coming soon</span></article>
-        <article class="card"><div class="icon">🎧</div><h3>Technology & Accessories</h3><p>Headphones, computer accessories, and useful learning tech.</p><span class="pill">Recommendations coming soon</span></article>
-        <article class="card"><div class="icon">📖</div><h3>Books & Learning Tools</h3><p>Books and digital services that may support learning.</p><span class="pill">Recommendations coming soon</span></article>
-      </div>
-      <p class="muted" style="font-size:.88rem;margin-top:16px">Affiliate disclosure: Some links may be affiliate links. If you purchase through them, this site may earn a commission at no additional cost to you. Recommendations will be identified appropriately.</p>
-    </div>
-  </section>
+<p>
+Educational resources, academic materials, articles,
+digital books and professional services — all gathered
+in one place.
+</p>
 
-  <section class="white" id="services">
-    <div class="wrap">
-      <div class="section-head"><h2>Services</h2><p>Professional and educational services may be offered based on availability.</p></div>
-      <div class="grid">
-        <article class="card"><h3>English–Bangla Language Services</h3><p>Translation, writing support, and language-related tasks.</p></article>
-        <article class="card"><h3>Educational Content</h3><p>Learning materials, educational writing, and subject resources.</p></article>
-        <article class="card"><h3>Writing & Research Support</h3><p>Research, information organization, and content assistance.</p></article>
-      </div>
-    </div>
-  </section>
+<div class="btns">
+<a class="btn" href="#academic">Explore Academic Resources</a>
+<a class="btn alt" href="#blog">Read the Blog</a>
+</div>
+</div>
 
-  <section id="contact">
-    <div class="wrap">
-      <div class="contact-box">
-        <h2>Contact</h2>
-        <p>For resource inquiries, service requests, or collaboration, please get in touch.</p>
-        <p><strong>Email:</strong> mursalin260829@gmail.com</p>
-        <p><strong>Phone:</strong> +8801711350019</p>
-        <a class="btn" href="mailto:mursalin260829@gmail.com?subject=Website%20Inquiry">Send an Email</a>
-      </div>
-    </div>
-  </section>
+<div class="hero-card">
+<div class="big">One Platform</div>
+<p>
+Education, knowledge, professional experience
+and digital opportunities.
+</p>
+<p><strong>Welcome to my learning platform.</strong></p>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="wrap">
+
+<div class="section-head">
+<h2>About</h2>
+<p>Introduction to the educator and professional behind this platform.</p>
+</div>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Mursalin Hassan</h3>
+<p>
+Education, administration, HR, finance, writing
+and learning resources are among my professional
+interests. This platform is designed to share
+educational knowledge and practical digital resources.
+</p>
+<a class="smallbtn" href="#contact">Get in touch</a>
+</div>
+
+<div class="card" id="profile">
+<h3>Professional Profile</h3>
+<p>
+Explore my professional background, qualifications,
+experience and services.
+</p>
+<span class="pill">CV link to be added</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ACADEMIC -->
+
+<section class="white" id="academic">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Academic Resources</h2>
+<p>Subject-based learning materials, revision notes, practice questions and model tests.</p>
+</div>
+
+<div class="grid four">
+
+<article class="card" id="mathematics">
+<div class="icon">➗</div>
+<h3>Mathematics</h3>
+<p>Notes, worked examples, practice sets and model tests.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+<article class="card" id="physics">
+<div class="icon">⚛️</div>
+<h3>Physics</h3>
+<p>Topic explanations and examination preparation.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+<article class="card" id="chemistry">
+<div class="icon">🧪</div>
+<h3>Chemistry</h3>
+<p>Chapter notes, concepts and practice questions.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+<article class="card" id="biology">
+<div class="icon">🧬</div>
+<h3>Biology</h3>
+<p>Study notes, key concepts and revision resources.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- EBOOKS -->
+
+<section id="ebooks">
+<div class="wrap">
+
+<div class="section-head">
+<h2>eBooks & Digital Products</h2>
+<p>Digital study guides and educational publications.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<span class="pill">Sample Product</span>
+<h3>O-Level Chemistry Revision Guide</h3>
+<p>Topic-wise notes and practice materials.</p>
+<div class="price">Price: To be announced</div>
+<a class="smallbtn" href="#contact">Request information</a>
+</article>
+
+<article class="card">
+<span class="pill">Sample Product</span>
+<h3>Mathematics Practice Pack</h3>
+<p>Practice questions organized for revision.</p>
+<div class="price">Price: To be announced</div>
+<a class="smallbtn" href="#contact">Request information</a>
+</article>
+
+<article class="card">
+<span class="pill">Free Sample</span>
+<h3>Preview Resources</h3>
+<p>Selected pages for visitors to preview.</p>
+<div class="price">Free Preview</div>
+<a class="smallbtn" href="#contact">Ask about samples</a>
+</article>
+
+</div>
+
+<div class="notice" style="margin-top:18px">
+Online payment and secure PDF delivery will be introduced later.
+</div>
+
+</div>
+</section>
+
+<!-- BLOG -->
+
+<section class="white" id="blog">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Blog & Free Articles</h2>
+<p>Knowledge, education, technology and useful ideas.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<span class="pill">Education</span>
+<h3>Benefits of English Medium Education</h3>
+<p>Exploring the academic and practical advantages of English Medium education.</p>
+</article>
+
+<article class="card">
+<span class="pill">Technology</span>
+<h3>Useful AI Tools for Students</h3>
+<p>A beginner-friendly introduction to digital learning tools.</p>
+</article>
+
+<article class="card">
+<span class="pill">Learning</span>
+<h3>Study Smarter with Practice</h3>
+<p>How practice and revision can improve learning.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- AFFILIATE -->
+
+<section id="affiliate">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Affiliate Recommendations</h2>
+<p>Useful books, study tools, technology and learning resources.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<div class="icon">🧮</div>
+<h3>Study Equipment</h3>
+<p>Calculators, stationery and practical tools.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+<article class="card">
+<div class="icon">🎧</div>
+<h3>Technology & Accessories</h3>
+<p>Computer accessories and learning technology.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+<article class="card">
+<div class="icon">📖</div>
+<h3>Books & Learning Tools</h3>
+<p>Books and digital learning resources.</p>
+<span class="pill">Coming soon</span>
+</article>
+
+</div>
+
+<p class="muted" style="margin-top:18px">
+Affiliate disclosure: Some links may be affiliate links.
+The website may earn a commission at no additional cost to you.
+</p>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="white" id="services">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Professional Services</h2>
+<p>Educational and professional services.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<h3>English–Bangla Language Services</h3>
+<p>Translation, writing and language-related tasks.</p>
+</article>
+
+<article class="card">
+<h3>Educational Content</h3>
+<p>Learning materials and educational writing.</p>
+</article>
+
+<article class="card">
+<h3>Writing & Research Support</h3>
+<p>Research, information analysis and content assistance.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<div class="wrap">
+
+<div class="contact-box">
+
+<h2>Contact</h2>
+
+<p>For educational inquiries, professional services
+and collaboration, please get in touch.</p>
+
+<p><strong>Email:</strong> mursalin260829@gmail.com</p>
+
+<p><strong>Phone:</strong> +8801711350019</p>
+
+<a class="btn"
+href="mailto:mursalin260829@gmail.com?subject=Website%20Inquiry">
+Send an Email
+</a>
+
+</div>
+</div>
+</section>
+
 </main>
 
 <footer>
-  <div class="wrap foot">
-    <span>© <span id="year"></span> Mursalin Hassan</span>
-    <span>Learning resources • Articles • Digital products</span>
-  </div>
+<div class="wrap foot">
+<span>© <span id="year"></span> Mursalin Hassan</span>
+<span>Learning • Knowledge • Digital Opportunities</span>
+</div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+/* Close other dropdowns when one is opened */
+
+document.querySelectorAll("nav details").forEach(item => {
+item.addEventListener("toggle", () => {
+if(item.open) {
+document.querySelectorAll("nav details").forEach(other => {
+if(other !== item) other.open = false;
+});
+}
+});
+});
+
+/* Close dropdown after selecting a menu item */
+
+document.querySelectorAll(".dropdown a").forEach(link => {
+link.addEventListener("click", () => {
+document.querySelectorAll("nav details").forEach(item => {
+item.open = false;
+});
+});
+});
+</script>
+
 </body>
 </html>
