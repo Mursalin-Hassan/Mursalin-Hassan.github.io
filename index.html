@@ -7,7 +7,7 @@
 
 <title>Mursalin Hassan | Learning & Digital Resources</title>
 
-<meta name="description" content="Educational resources, academic materials, eBooks, articles and professional services from Mursalin Hassan.">
+<meta name="description" content="Educational resources, academic materials, eBooks, articles, professional services and digital products from Mursalin Hassan.">
 
 <style>
 :root {
@@ -72,9 +72,7 @@ gap:5px;
 flex-wrap:wrap;
 }
 
-nav details {
-position:relative;
-}
+nav details {position:relative;}
 
 nav summary {
 list-style:none;
@@ -89,9 +87,7 @@ nav summary::-webkit-details-marker {
 display:none;
 }
 
-nav summary::after {
-content:" ▾";
-}
+nav summary::after {content:" ▾";}
 
 nav summary:hover,
 nav details[open] summary {
@@ -102,12 +98,14 @@ background:#ffffff28;
 position:absolute;
 top:100%;
 left:0;
-min-width:190px;
+min-width:215px;
 background:white;
 color:var(--darkgreen);
 border-radius:9px;
 box-shadow:0 8px 20px #0003;
 padding:7px;
+max-height:75vh;
+overflow-y:auto;
 }
 
 .dropdown a {
@@ -128,8 +126,6 @@ color:var(--red);
 background:linear-gradient(135deg,var(--darkgreen),var(--green));
 color:white;
 padding:70px 0;
-position:relative;
-overflow:hidden;
 }
 
 .hero-grid {
@@ -196,16 +192,12 @@ font-weight:800;
 
 section {
 padding:50px 0;
-scroll-margin-top:90px;
+scroll-margin-top:95px;
 }
 
-section.white {
-background:white;
-}
+section.white {background:white;}
 
-.section-head {
-margin-bottom:25px;
-}
+.section-head {margin-bottom:25px;}
 
 .section-head h2 {
 color:var(--green);
@@ -245,9 +237,7 @@ padding:21px;
 box-shadow:0 5px 16px #004d2c0b;
 }
 
-.white .card {
-background:var(--lightgreen);
-}
+.white .card {background:var(--lightgreen);}
 
 .card h3 {
 color:var(--green);
@@ -259,9 +249,7 @@ color:var(--muted);
 font-size:.95rem;
 }
 
-.icon {
-font-size:1.7rem;
-}
+.icon {font-size:1.7rem;}
 
 .pill {
 display:inline-block;
@@ -281,6 +269,7 @@ padding:8px 13px;
 border-radius:7px;
 font-weight:bold;
 font-size:.88rem;
+margin-top:8px;
 }
 
 .smallbtn:hover {
@@ -311,8 +300,37 @@ padding:30px;
 border-radius:16px;
 }
 
-.contact-box p {
-color:#e1f4e7;
+.contact-box p {color:#e1f4e7;}
+
+.contact-box a:not(.btn) {
+color:white;
+text-decoration:underline;
+}
+
+/* PAYMENT */
+
+.payment-card {
+background:white;
+border:1px solid var(--line);
+border-radius:14px;
+padding:22px;
+}
+
+.payment-card h3 {color:var(--green);}
+
+.payment-status {
+display:inline-block;
+background:#e4f4e9;
+color:var(--green);
+padding:5px 11px;
+border-radius:20px;
+font-size:.8rem;
+font-weight:bold;
+}
+
+.coming-soon {
+background:#fff0df;
+color:#925b16;
 }
 
 /* FOOTER */
@@ -336,14 +354,10 @@ flex-wrap:wrap;
 @media(max-width:850px) {
 
 .hero-grid,
-.about-grid {
-grid-template-columns:1fr;
-}
+.about-grid {grid-template-columns:1fr;}
 
 .grid,
-.grid.four {
-grid-template-columns:repeat(2,1fr);
-}
+.grid.four {grid-template-columns:repeat(2,1fr);}
 
 .topbar {
 padding:13px 0;
@@ -351,26 +365,18 @@ align-items:flex-start;
 flex-direction:column;
 }
 
-nav {
-gap:3px;
-}
+nav {gap:3px;}
 
 }
 
 @media(max-width:560px) {
 
 .grid,
-.grid.four {
-grid-template-columns:1fr;
-}
+.grid.four {grid-template-columns:1fr;}
 
-.hero {
-padding:45px 0;
-}
+.hero {padding:45px 0;}
 
-nav {
-width:100%;
-}
+nav {width:100%;}
 
 nav summary {
 padding:9px 8px;
@@ -378,7 +384,7 @@ font-size:.79rem;
 }
 
 .dropdown {
-min-width:175px;
+min-width:190px;
 }
 
 }
@@ -394,6 +400,8 @@ min-width:175px;
 
 <nav aria-label="Main navigation">
 
+<!-- ABOUT -->
+
 <details>
 <summary>ABOUT</summary>
 <div class="dropdown">
@@ -403,9 +411,12 @@ min-width:175px;
 </div>
 </details>
 
+<!-- ACADEMIC -->
+
 <details>
 <summary>ACADEMIC</summary>
 <div class="dropdown">
+<a href="#academic">Academic Resources</a>
 <a href="#mathematics">Mathematics</a>
 <a href="#physics">Physics</a>
 <a href="#chemistry">Chemistry</a>
@@ -413,14 +424,19 @@ min-width:175px;
 </div>
 </details>
 
+<!-- EBOOKS -->
+
 <details>
 <summary>EBOOKS</summary>
 <div class="dropdown">
 <a href="#ebooks">Digital Books</a>
 <a href="#ebooks">Study Guides</a>
 <a href="#ebooks">Free Samples</a>
+<a href="#buy-products">Buy Our Products</a>
 </div>
 </details>
+
+<!-- BLOG -->
 
 <details>
 <summary>BLOG</summary>
@@ -431,14 +447,20 @@ min-width:175px;
 </div>
 </details>
 
+<!-- AFFILIATE -->
+
 <details>
 <summary>AFFILIATE</summary>
 <div class="dropdown">
 <a href="#affiliate">Study Equipment</a>
 <a href="#affiliate">Technology</a>
 <a href="#affiliate">Books</a>
+<a href="#affiliate-products">Affiliate Products</a>
+<a href="#affiliate-payment">Affiliate Payment & Earnings</a>
 </div>
 </details>
+
+<!-- SERVICES -->
 
 <details>
 <summary>SERVICES</summary>
@@ -449,12 +471,16 @@ min-width:175px;
 </div>
 </details>
 
+<!-- CONTACT -->
+
 <details>
 <summary>CONTACT</summary>
 <div class="dropdown">
-<a href="#contact">Email</a>
-<a href="#contact">Phone</a>
 <a href="#contact">Contact Information</a>
+<a href="#send-message">Send a Message</a>
+<a href="#payment-methods">Payment Methods</a>
+<a href="#payment-instructions">Payment Instructions</a>
+<a href="#order-support">Order & Purchase Support</a>
 </div>
 </details>
 
@@ -470,9 +496,15 @@ min-width:175px;
 <div class="wrap hero-grid">
 
 <div>
-<div class="eyebrow">Learning • Resources • Digital Skills</div>
 
-<h1>Learn with clarity.<br>Grow with confidence.</h1>
+<div class="eyebrow">
+Learning • Resources • Digital Skills
+</div>
+
+<h1>
+Learn with clarity.<br>
+Grow with confidence.
+</h1>
 
 <p>
 Educational resources, academic materials, articles,
@@ -481,20 +513,37 @@ in one place.
 </p>
 
 <div class="btns">
-<a class="btn" href="#academic">Explore Academic Resources</a>
-<a class="btn alt" href="#blog">Read the Blog</a>
+<a class="btn" href="#academic">
+Explore Academic Resources
+</a>
+
+<a class="btn alt" href="#blog">
+Read the Blog
+</a>
+
+<a class="btn" href="#buy-products">
+Buy Our Products
+</a>
+
+<a class="btn alt" href="#affiliate-products">
+Affiliate Products
+</a>
 </div>
+
 </div>
 
 <div class="hero-card">
+
 <div class="big">One Platform</div>
+
 <p>
 Education, knowledge, professional experience
 and digital opportunities.
 </p>
-<p><strong>Welcome to my learning platform.</strong></p>
-</div>
 
+<p><strong>Welcome to my learning platform.</strong></p>
+
+</div>
 </div>
 </section>
 
@@ -595,7 +644,7 @@ experience and services.
 <h3>O-Level Chemistry Revision Guide</h3>
 <p>Topic-wise notes and practice materials.</p>
 <div class="price">Price: To be announced</div>
-<a class="smallbtn" href="#contact">Request information</a>
+<a class="smallbtn" href="#order-support">Request information</a>
 </article>
 
 <article class="card">
@@ -603,7 +652,7 @@ experience and services.
 <h3>Mathematics Practice Pack</h3>
 <p>Practice questions organized for revision.</p>
 <div class="price">Price: To be announced</div>
-<a class="smallbtn" href="#contact">Request information</a>
+<a class="smallbtn" href="#order-support">Request information</a>
 </article>
 
 <article class="card">
@@ -611,9 +660,13 @@ experience and services.
 <h3>Preview Resources</h3>
 <p>Selected pages for visitors to preview.</p>
 <div class="price">Free Preview</div>
-<a class="smallbtn" href="#contact">Ask about samples</a>
+<a class="smallbtn" href="#order-support">Ask about samples</a>
 </article>
 
+</div>
+
+<div class="btns" id="buy-products">
+<a class="btn" href="#payment-methods">BUY OUR PRODUCTS</a>
 </div>
 
 <div class="notice" style="margin-top:18px">
@@ -692,10 +745,65 @@ Online payment and secure PDF delivery will be introduced later.
 
 </div>
 
-<p class="muted" style="margin-top:18px">
+<div class="btns" id="affiliate-products">
+<a class="btn" href="#affiliate-payment">
+AFFILIATE PRODUCTS
+</a>
+</div>
+
+<p style="margin-top:18px;color:var(--muted)">
 Affiliate disclosure: Some links may be affiliate links.
 The website may earn a commission at no additional cost to you.
 </p>
+
+</div>
+</section>
+
+<!-- AFFILIATE PAYMENT -->
+
+<section class="white" id="affiliate-payment">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Affiliate Payment & Earnings</h2>
+<p>Information about affiliate commissions and payment arrangements.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<div class="icon">💰</div>
+<h3>Affiliate Earnings</h3>
+<p>
+Commission may be earned through qualifying purchases
+made using approved affiliate links.
+</p>
+</article>
+
+<article class="card">
+<div class="icon">🏦</div>
+<h3>Payment Methods</h3>
+<p>
+Available payment methods depend on the individual
+affiliate programme and its payment policies.
+</p>
+</article>
+
+<article class="card">
+<div class="icon">📋</div>
+<h3>Payment Information</h3>
+<p>
+Commission rates, minimum payout amounts and
+payment schedules will follow the relevant programme's terms.
+</p>
+</article>
+
+</div>
+
+<div class="notice" style="margin-top:20px">
+Affiliate commissions are subject to the relevant company's
+terms, verification and payment arrangements.
+</div>
 
 </div>
 </section>
@@ -731,65 +839,241 @@ The website may earn a commission at no additional cost to you.
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- PAYMENT METHODS -->
 
-<section id="contact">
+<section id="payment-methods">
 <div class="wrap">
 
-<div class="contact-box">
+<div class="section-head">
+<h2>Payment Methods</h2>
+<p>Available and planned payment options.</p>
+</div>
 
-<h2>Contact</h2>
+<div class="grid">
 
-<p>For educational inquiries, professional services
-and collaboration, please get in touch.</p>
+<article class="payment-card">
+<div class="icon">🟢</div>
+<h3>bKash</h3>
+<p>Local payments within Bangladesh.</p>
+<span class="payment-status">Details to be announced</span>
+</article>
 
-<p><strong>Email:</strong> mursalin260829@gmail.com</p>
+<article class="payment-card">
+<div class="icon">🏦</div>
+<h3>Dutch-Bangla Bank</h3>
+<p>Bank transfer payments.</p>
+<span class="payment-status">Details to be announced</span>
+</article>
 
-<p><strong>Phone:</strong> +8801711350019</p>
+<article class="payment-card">
+<div class="icon">🌐</div>
+<h3>Payoneer</h3>
+<p>International payment arrangements.</p>
+<span class="payment-status coming-soon">Coming Soon</span>
+</article>
 
-<a class="btn"
-href="mailto:mursalin260829@gmail.com?subject=Website%20Inquiry">
-Send an Email
-</a>
+</div>
+
+<div class="notice" style="margin-top:20px">
+Actual payment links and account details will be
+published only after the relevant accounts and
+arrangements are ready.
+</div>
+
+</div>
+</section>
+
+<!-- PAYMENT INSTRUCTIONS -->
+
+<section class="white" id="payment-instructions">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Payment Instructions</h2>
+<p>Guidance for purchasing digital educational products.</p>
+</div>
+
+<div class="card">
+
+<h3>How to Purchase</h3>
+
+<p><strong>Step 1:</strong> Select your desired eBook or educational product.</p>
+
+<p><strong>Step 2:</strong> Contact us to confirm availability and price.</p>
+
+<p><strong>Step 3:</strong> Receive the applicable payment instructions.</p>
+
+<p><strong>Step 4:</strong> Follow the confirmed payment process.</p>
+
+<p><strong>Step 5:</strong> Receive your product according to the agreed delivery method.</p>
+
+<div class="notice">
+Please wait for confirmed payment instructions.
+Do not send money to unverified accounts.
+</div>
 
 </div>
 </div>
 </section>
 
+<!-- ORDER SUPPORT -->
+
+<section id="order-support">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Order & Purchase Support</h2>
+<p>Assistance with product information, orders and digital delivery.</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<div class="icon">📚</div>
+<h3>Product Information</h3>
+<p>Ask about eBooks, study guides and educational materials.</p>
+<a class="smallbtn" href="#send-message">Ask a Question</a>
+</article>
+
+<article class="card">
+<div class="icon">🛒</div>
+<h3>Order Assistance</h3>
+<p>Get assistance with product availability and ordering.</p>
+<a class="smallbtn" href="#send-message">Contact Support</a>
+</article>
+
+<article class="card">
+<div class="icon">📩</div>
+<h3>Delivery Support</h3>
+<p>Ask about digital product delivery and order-related matters.</p>
+<a class="smallbtn" href="#send-message">Get Support</a>
+</article>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="white" id="contact">
+<div class="wrap">
+
+<div class="contact-box">
+
+<h2>Contact Information</h2>
+
+<p>
+For educational inquiries, professional services
+and collaboration, please get in touch.
+</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:mursalin260829@gmail.com">
+mursalin260829@gmail.com
+</a>
+</p>
+
+<p>
+<strong>Phone:</strong>
+<a href="tel:+8801711350019">
++8801711350019
+</a>
+</p>
+
+<a class="btn" href="#send-message">
+Send a Message
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- SEND MESSAGE -->
+
+<section id="send-message">
+<div class="wrap">
+
+<div class="section-head">
+<h2>Send a Message</h2>
+<p>Contact us by email for questions and inquiries.</p>
+</div>
+
+<div class="card">
+
+<h3>Get in Touch</h3>
+
+<p>
+For product information, payment questions,
+academic resources or professional services,
+please send an email.
+</p>
+
+<a class="btn"
+href="mailto:mursalin260829@gmail.com?subject=Website%20Inquiry">
+SEND EMAIL
+</a>
+
+</div>
+
+</div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
 
 <footer>
 <div class="wrap foot">
+
 <span>© <span id="year"></span> Mursalin Hassan</span>
+
 <span>Learning • Knowledge • Digital Opportunities</span>
+
 </div>
 </footer>
 
 <script>
+
 document.getElementById("year").textContent =
 new Date().getFullYear();
 
 /* Close other dropdowns when one is opened */
 
 document.querySelectorAll("nav details").forEach(item => {
+
 item.addEventListener("toggle", () => {
+
 if(item.open) {
+
 document.querySelectorAll("nav details").forEach(other => {
+
 if(other !== item) other.open = false;
+
 });
+
 }
+
 });
+
 });
 
 /* Close dropdown after selecting a menu item */
 
 document.querySelectorAll(".dropdown a").forEach(link => {
+
 link.addEventListener("click", () => {
+
 document.querySelectorAll("nav details").forEach(item => {
 item.open = false;
 });
+
 });
+
 });
+
 </script>
 
 </body>
